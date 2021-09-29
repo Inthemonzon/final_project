@@ -53,7 +53,8 @@ function ShowContainer(props) {
             <p>Genre: {eachShow.genre}</p>
             <p>Description: {eachShow.description}</p>
             <div className="ui divider" />
-            <button onClick={handleDeleteClick}>Remove Show</button>
+            <Rating />
+            {/* <button onClick={handleDeleteClick}>Remove Show</button> */}
           </div>
         ))}
       </main>
@@ -63,7 +64,6 @@ function ShowContainer(props) {
   return (
     <div>
       <>
-      <Rating />
       {showId ? (
         <ShowContainerRender />
       ) : (
