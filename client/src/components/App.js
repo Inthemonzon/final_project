@@ -4,6 +4,7 @@ import Login from '../components/Login';
 import Signup from '../components/SignUp';
 import NavBar from '../components/NavBar';
 import ShowContainer from '../components/ShowContainer';
+import '../index.css';
 
 function App() {
   const [shows, setShows] = useState({})

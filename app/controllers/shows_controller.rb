@@ -6,6 +6,10 @@ class ShowsController < ApplicationController
         render json: shows
     end
 
+    def show_all_shows
+        shows = Show.all
+        render json: shows
+    end
     
     def show_user_shows
         shows = Show.where(user_id: params[:id])
